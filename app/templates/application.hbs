@@ -1,7 +1,19 @@
 {{page-title "TD0"}}
-
+<header>
 {{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<h1>Application TD0</h1>
+  <nav style="align-content: center">
+  <LinkTo @route="index">Accueil</LinkTo>
+  <LinkTo @route="user">User</LinkTo>
+  <LinkTo @route="client">Client</LinkTo>
+  </nav>
+</header>
+{{!-- Feel free to remove this! --}}
+<main>
+  {{outlet}}
+</main>
+<hr>
+<footer>
+  <div>Footer</div>
+</footer>
