@@ -3,7 +3,7 @@ import { action } from '@ember/object';
 
 export default class ClientDetailsRoute extends Route {
   @action
-  fermer(){
+  fermer() {
     this.transitionTo('client');
   }
 }
